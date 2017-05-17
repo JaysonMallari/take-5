@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>TAKE 5</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width initial-scale=1">
+		
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet"> 
+
+		<link rel="icon" type="img/png" href="http://res.cloudinary.com/divogwk0j/image/upload/v1477920489/rjround_bi5ibd.png">
+		
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet"> 
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		
+		<link rel="stylesheet" type="text/css" href="powerstyle.css">
+		<script type="text/javascript" src="pjs.js"></script>
+	</head>
+		<body>
+			<!-- HEADER -->
+			<header>
+				<span class="power">TAKE 5</span>
+				<button class="btn btn-info btn-sm pull-right draw"><i class="fa fa-info"> &nbsp Draws</i></button>
+			</header>
+			<!-- DRAW DROP DOWN LIST-->
+				<ul class="drawList pull-right">
+						<li class="numChoice" value="25">25 Draws</li>
+						<li class="numChoice" value="50">50 Draws</li>
+						<li class="numChoice" value="75">75 Draws</li>
+						<li class="numChoice" value="100">100 Draws</li>
+						<li class="text-center">
+							<input id="input" type="text" pattern="\d*" placeholder="..." size="10"
+							onfocus="if(this.value != '') { this.value = ''; }" value=""/>
+							<button class="btn btn-default btn-xs submit">Check</button>
+						</li>
+				</ul>
+
+			
+				<!-- BODY -->
+				<div class="powerbody">
+
+					<div class="infoBar col-xs-3">
+						
+						<!-- INFO -->
+						<span class="f">F</span> <font color="#fff">Frequency   </font><br><br><br>
+						<span class="e text-center">E</span><font color="#fff"> (E)ven or (O)dd</font><br><br><br>
+						<span class="p text-center">P</span><font color="#fff"> (P)rime or (N)ot</font><br><br>
+					   
+					   <!-- WHITE BALL FREQ -->
+					    <button class="btn btn-block btn-info btn-lg btnWB" >Frequency</button><br>
+					    	<span class="outputWB text-center"></span>
+					    
+				
+					    
+
+					</div>
+
+						<!-- OUTPUT -->
+						<div class="output col-xs-9">
+						</div>
+
+				</div>
+
+			
+		</body>
+</html>
